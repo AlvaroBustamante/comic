@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Comic</string>
+    <string name="description_comic_add">Crear comic</string>
+    <string name="description_img_photo">Comic</string>
+    <string name="hint_name">Nombre del comic</string>
+    <string name="helper_required">Obligatorio</string>
+    <string name="hint_categoria">Categoria del comic</string>
+    <string name="hint_website">WebSite del comic</string>
+    <string name="hint_photo_url">Url de la imagen del comic</string>
+    <string name="hint_descripcion">Descripcion del comic</string>
+    <string name="menu_save">Save</string>
+    <string name="main_error_no_website">Web site del comic no encontrado</string>
+    <string name="main_error_no_resolve">Comic error</string>
+    <string name="dialog_delete_cancel">Eliminacion del comic cancelada</string>
+    <string name="dialog_delete_confirm">Esta seguro de eliminar este comic?</string>
+    <string name="dialog_delete_title">Eliminación de comic</string>
+    <string name="arg_id">key_id</string>
+    <string name="dialog_options_title">Que desea hacer?</string>
+    <string name="edit_comic_title_edit">Editar Comic</string>
+    <string name="edit_comic_title_add">Crear Comic</string>
+    <string name="edit_comic_message_update_success">Comic actualizado exitosamente</string>
+    <string name="edit_comic_message_save_success">Comic guardado exitosamente</string>
+    <string name="edit_comic_message_valid">Revise los campos obligatorios</string>
+</resources>

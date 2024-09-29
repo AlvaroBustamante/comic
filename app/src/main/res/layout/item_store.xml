@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_card_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/common_padding_min"
+    android:layout_marginHorizontal="@dimen/common_padding_min">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/description_img_photo"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/tvDescripcion"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ecat"
+            tools:text="Categoria:"
+
+            app:layout_constraintStart_toEndOf="@id/imgPhoto"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="@dimen/common_padding_min"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="?attr/textAppearanceBody2">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tvCategoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Categoria del comic"
+            app:layout_constraintStart_toEndOf="@id/imgPhoto"
+            app:layout_constraintTop_toBottomOf="@id/ecat"
+            app:layout_constraintEnd_toEndOf="@id/tvDescripcion"
+
+            android:background="@color/white"
+            android:padding="@dimen/common_padding_min"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edes"
+            tools:text="Descripción:"
+            app:layout_constraintStart_toEndOf="@id/imgPhoto"
+            app:layout_constraintTop_toBottomOf="@id/tvCategoria"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:padding="@dimen/common_padding_min"
+            android:textAppearance="?attr/textAppearanceBody2">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="161dp"
+            android:layout_height="95dp"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:padding="@dimen/common_padding_min"
+            android:textAppearance="?attr/textAppearanceBody2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edes"
+            tools:text="Descripcion del comic" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Nombre del comic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imgPhoto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/white"
+            android:padding="@dimen/common_padding_min"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="?attr/textAppearanceBody2"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cbFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:button="@drawable/states_cb_favorite"
+            android:buttonTint="@android:color/white"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
